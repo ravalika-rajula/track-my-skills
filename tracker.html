@@ -1,69 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Skill Tracker - Trac My Skills</title>
-        <style>
-            body {
-                font-family: arieal, sans-serif;
-                background-color: #f5f7fa;
-                margin: 0;
-                padding: 0;
-            }
-            header {
-                background-color: #4a90e2;
-                color: white;
-                padding: 20px;
-                text-align: center;
-            }
-            .container {
-                padding: 30px;
-                max-width: 800px;
-                margin: auto;
-            }
-            .skil-card {
-                background-color: white;
-                padding: 20px;
-                margin-bottom: 20px;
-                border-radius: 10px;
-                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            }
-            .skill-title {
-                font-size: 20px;
-                color: #333;
-            }
-            .skill-level {
-                color: #666;
-                font-size: 14px;
-            }
-            .skill-goal {
-                margin-top: 10px;
-                color: #444;
-            }
-        </style>
-    </head>
-    <body>
-        <nav style="background-color:#333; padding:10px; text-align:center;">
-  <a href="index.html" style="color:white; margin: 10px; text-decoration:none;">Home</a>
-  <a href="add-skill.html" style="color:white; margin: 10px; text-decoration:none;">Add Skill</a>
-  <a href="tracker.html" style="color:white; margin: 10px; text-decoration:none;">Skill Tracker</a>
-  <a href="achievements.html" style="color:white; margin: 10px; text-decoration:none;">Achievements</a>
-</nav>
-        <header>
-            <h1>Youe Tracked Skills</h1>
-        </header>
-        <div class="container">
-            <!--Mock Skill 1-->
-            <div class="skill-card">
-                <div class="skill-title">HTML</div>
-                <div class="skill-level">Beginner</div>
-                <div class="skill-goal">Goal:Create a basic personal website</div>
-            </div>
-            <!--mock skill 2-->
-            <div class="skill-card">
-                <div class="skill-title">C++</div>
-                <div class="skill-level">Intermediate</div>
-                <div class="skill-goal">Goal: build a machine learning project</div>
-            </div>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skill Tracker - Track My Skills</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a90e2, #357ac8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .skill-card {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .skill-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .skill-level {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .skill-goal {
+      margin-top: 15px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .skill-card {
+        padding: 18px;
+      }
+
+      .skill-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="add-skill.html">➕ Add Skill</a>
+    <a href="tracker.html">📊 Skill Tracker</a>
+    <a href="achievements.html">🏅 Achievements</a>
+  </nav>
+
+  <header>
+    <h1>📊 Your Tracked Skills</h1>
+  </header>
+
+  <div class="container">
+    <!-- Mock Skill 1 -->
+    <div class="skill-card">
+      <div class="skill-title">HTML</div>
+      <div class="skill-level">👶 Beginner</div>
+      <div class="skill-goal">Goal: Create a basic personal website</div>
+    </div>
+
+    <!-- Mock Skill 2 -->
+    <div class="skill-card">
+      <div class="skill-title">C++</div>
+      <div class="skill-level">🧠 Intermediate</div>
+      <div class="skill-goal">Goal: Build a machine learning project</div>
+    </div>
+  </div>
+
+</body>
 </html>
+           
+        
